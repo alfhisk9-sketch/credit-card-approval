@@ -1,0 +1,180 @@
+```html
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="contact-page">
+
+  <div class="page-header-section">
+    <div class="container">
+      <h1 class="page-title">
+        <i class="bi bi-envelope-fill me-2 text-info"></i>
+        Contact Us
+      </h1>
+      <p class="page-subtitle">
+        SmartBridge Internship Project – AI-Based Credit Card Approval Prediction System
+      </p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row g-5 justify-content-center">
+
+      <!-- Contact Information -->
+      <div class="col-lg-5">
+        <div class="contact-info-panel">
+          <h4 class="fw-700 mb-4">Project Contact Information</h4>
+
+          <div class="contact-info-item">
+            <div class="contact-icon bg-primary-soft">
+              <i class="bi bi-person-badge-fill text-primary"></i>
+            </div>
+            <div>
+              <div class="contact-label">Project</div>
+              <div class="contact-val">
+                AI-Based Credit Card Approval Prediction System
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon bg-success-soft">
+              <i class="bi bi-mortarboard-fill text-success"></i>
+            </div>
+            <div>
+              <div class="contact-label">Program</div>
+              <div class="contact-val">
+                SmartBridge Internship
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon bg-info-soft">
+              <i class="bi bi-people-fill text-info"></i>
+            </div>
+            <div>
+              <div class="contact-label">Application Builder</div>
+              <div class="contact-val">
+                SK Alfhi
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon bg-warning-soft">
+              <i class="bi bi-envelope-fill text-warning"></i>
+            </div>
+            <div>
+              <div class="contact-label">gmail</div>
+              <div class="contact-val">
+                alfhisk9@gmail.com
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon bg-dark-soft">
+              <i class="bi bi-github text-dark"></i>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-val">
+                github.com/alfhisk9-sketch
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon bg-danger-soft">
+              <i class="bi bi-geo-alt-fill text-danger"></i>
+            </div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val">
+                Bhimavaram, Andhra Pradesh, India
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="contact-form-card">
+
+          <h4 class="fw-700 mb-2">Send Us a Message</h4>
+
+          <p class="text-muted mb-4">
+            Have questions about the SmartBridge Internship project or machine learning implementation?
+            We'd be happy to hear from you.
+          </p>
+
+          <form method="POST" action="{{ url_for('main.contact') }}" novalidate>
+
+            <input type="hidden"
+                   name="csrf_token"
+                   value="{{ csrf_token() }}">
+
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label class="form-label-custom">Full Name</label>
+                <input
+                    type="text"
+                    class="form-control-custom"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label-custom">gmail Address</label>
+                <input
+                    type="gmail"
+                    class="form-control-custom"
+                    name="email"
+                    placeholder="Enter your gmail address"
+                    required>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label-custom">Subject</label>
+                <input
+                    type="text"
+                    class="form-control-custom"
+                    name="subject"
+                    placeholder="Subject">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label-custom">Message</label>
+                <textarea
+                    class="form-control-custom"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message here..."
+                    required></textarea>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary w-100" type="submit">
+                  <i class="bi bi-send-fill me-2"></i>
+                  Send Message
+                </button>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+```

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Flask / Instance
+instance/*.db
+instance/*.log
+instance/uploads/
+*.sqlite3
+*.db
+
+# Env
+.env
+.env.*
+!.env.example
+
+# ML Models (generated)
+ml_models/*.joblib
+ml_models/*.pkl
+ml_models/metrics.json
+!ml_models/train_models.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Migrations (keep structure, ignore versions optionally)
+# migrations/versions/
+
+# Logs
+*.log
+logs/
