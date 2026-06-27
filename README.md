@@ -209,8 +209,14 @@ http://localhost:5000
 | **Modugumudi TwineMallikadevi** | Project Linker & Plan Analyst (Backend)                         |
 
 ---
-
 # 👨‍💻 Project Lead
+
+###Bheemuni Pujitha
+
+** Team Lead, Data Visualization & Data Analysis (Analyst) **
+
+---
+# 👨‍💻 Project Application builder
 
 ### SK Alfhi
 
